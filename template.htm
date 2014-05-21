@@ -6,35 +6,49 @@
           font-size: 14pt;
           line-height: 22pt;
           font-family: serif;
-          color: #525252;
-          background-color: Snow; /* eggshell */
+          color: Black;
+          background-color: White; /*Snow;*/
       }
       p {
-          text-align: justify; 
+          text-align: justify;
       }
       a {
-          color: black;
+          color: DarkRed;
           text-decoration: none; 
       }
+      /* container for everything on screen */
       #everything {
           margin-left: auto;
           margin-right: auto;
           margin-top: 5em;
           width: auto;
-          max-width: 40em;
       }
+      /* cglab.ca logo */
+      #logo {
+          font-style: italic;
+          text-align: center;
+          font-size: 140%;
+          margin: 0;
+          margin-top: 2em;
+      }
+      /* title and subtitle on the index page */
       #title {
-         font-weight: bold;
+         text-align: center;
          white-space: nowrap;
-         font-size: 261.8%;
+         font-size: 400%;
          margin: 0;
-         margin-left: -4pt;
+         margin-top: 2em;
       }
       #subtitle {
-          font-family: fantasy;
+          text-align: center;
+          font-size: 140%;
+          margin: 0;
+          margin-top: 2em;
       }
+      /* list of options at the top of screen */
       #options {
         display: block;
+        text-align: center;
         white-space: nowrap;
         font-size: 161.8%;
         padding: 0;
@@ -42,30 +56,52 @@
         margin-top: 2em;
       }
       #options li {
-        white-space: nowrap;
-        text-transform: lowercase;
         display: inline;
         list-style-type: none;
         white-space: nowrap;
+        text-transform: lowercase;
+        white-space: nowrap;
         padding: 0;
         margin: 0;
-        margin-right: 1em;
+        margin-right: 2em;
       }
+      #options li:last-child {
+        margin-right: 0;
+      }
+      /* content wrapper for most text; must be included in most .htm files */ 
+      div.text {
+        margin: auto;
+        width: auto;
+        max-width: 35em;
+      }
+      /* page content, comes after header and everything else */
       #content {
-        padding-top: 1em;
+        margin-top: 3em;
       }
+      /* Don't break names */
       .name {
         white-space: nowrap;
       }
-      /* #options li:before {
-        content: "\231f";
+      /* styles for seminar abstracts */
+      div.seminartitle {
+        margin: 1em 0 1em 0;
+        font-weight: bold;
+        font-size: 140%;
+        text-align: center;
       }
-      #options li:after {
-        content: "\231e";
+      div.seminarspeaker {
+        margin-top: 1em;
+        text-align: center;
       }
-      #options li:last-child:after {
-        content: "";
-      } */
+      div.seminaraffiliation {
+        font-style: italic;
+        text-align: center;
+      }
+      div.seminarabstract {
+        margin: auto;
+        margin-top: 1em;
+        max-width: 35em;
+      }
     </style>
     <script 
       src="http://hyphenator.googlecode.com/svn/tags/Version%204.0.0/Hyphenator.js">
@@ -73,8 +109,8 @@
   </head>
   <body lang="en" class="hyphenate">
   <div id="everything">
-    <div id="title">Computational Geometry Lab</div>
-    <div id="subtitle"><a href="./">cglab.ca</a></div>    
+    <!-- <div id="title">Computational Geometry Lab</div> -->
+    <div id="logo"><a href="./">cglab.ca</a></div>    
     <ul id="options">
       <li>[[about]]</li>
       <li>[[people]]</li>
