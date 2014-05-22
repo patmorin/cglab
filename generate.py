@@ -3,7 +3,7 @@ import os
 import re
 
 
-outdir="."
+outdir="../public_html"
 
 def get_citation_stats():
     url=r'http://scholar.google.ca/citations?hl=en&user=WIF0SRYAAAAJ'
@@ -43,7 +43,7 @@ if __name__ == "__main__":
                             r'<a href="\2">\1</a>', output)
 
             # Write output .html file.
-            fp = open(os.path.join(root, p) + ".html", "w")
+            fp = open(os.path.join(outdir, root, p) + ".html", "w")
             fp.write(output)
             fp.close()
 
