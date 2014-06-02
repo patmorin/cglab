@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE ipestyle SYSTEM "ipe.dtd">
+<ipestyle name="cglab">
+<color name="mydarkred" value="0.5450 0 0"/>
+<color name="mydarkgreen" value="0 0.3254 0.3254"/>
+<color name="mylightgreen" value="0.3372 0.5098 0"/>
+</ipestyle>
+
