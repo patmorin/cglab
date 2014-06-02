@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70005" creator="Ipe 7.1.4">
-<info created="D:20140521214302" modified="D:20140521215022"/>
+<info created="D:20140521214302" modified="D:20140602132515"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -202,13 +202,13 @@ h
 <dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
 <dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
 <textsize name="large" value="\large"/>
+<textsize name="small" value="\small"/>
+<textsize name="tiny" value="\tiny"/>
 <textsize name="Large" value="\Large"/>
 <textsize name="LARGE" value="\LARGE"/>
 <textsize name="huge" value="\huge"/>
 <textsize name="Huge" value="\Huge"/>
-<textsize name="small" value="\small"/>
 <textsize name="footnote" value="\footnotesize"/>
-<textsize name="tiny" value="\tiny"/>
 <textstyle name="center" begin="\begin{center}" end="\end{center}"/>
 <textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
 <textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
@@ -232,7 +232,7 @@ h
 <page>
 <layer name="alpha"/>
 <view layers="alpha" active="alpha"/>
-<path layer="alpha" stroke="darkred" fill="darkred">
+<path layer="alpha" stroke="darkred" pen="heavier" cap="1" join="1">
 125.356 702.036 m
 120.355 697.035 l
 120.355 683.93 l
@@ -241,6 +241,15 @@ h
 174.601 702.036 l
 h
 </path>
-<text matrix="1 0 0 1 -3.94358 0.541497" transformations="translations" pos="128 688" stroke="white" type="label" width="41.843" height="6.092" depth="2.21" valign="baseline">{\bfseries\ttfamily cglab.ca}</text>
+<text matrix="1 0 0 1 -3.94358 0.541497" transformations="translations" pos="128 688" stroke="darkred" type="label" width="41.843" height="6.092" depth="2.21" valign="baseline">{\bfseries\ttfamily cglab.ca}</text>
+<path stroke="darkred" pen="heavier" cap="1" join="1">
+169.601 697.035 m
+174.601 702.036 l
+</path>
+<path stroke="darkred" pen="heavier" join="1">
+120.355 697.035 m
+169.601 697.035 l
+169.601 683.93 l
+</path>
 </page>
 </ipe>
